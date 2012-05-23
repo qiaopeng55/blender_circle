@@ -18,12 +18,12 @@ public final class R {
         /**  Wallpaper showing Bokeh 
          */
         public static final int bokeh=0x7f040001;
-        public static final int bokeh_desc=0x7f040002;
+        public static final int paper_desc=0x7f040002;
         /**  Application name 
          */
         public static final int wallpapers=0x7f040000;
     }
     public static final class xml {
-        public static final int bokeh=0x7f030000;
+        public static final int wallpaper=0x7f030000;
     }
 }

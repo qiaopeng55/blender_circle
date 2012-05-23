@@ -9,5 +9,5 @@
     <!-- Wallpaper showing Bokeh -->
     <string name="bokeh">Rainbow Disk</string>
 
-    <string name="bokeh_desc">Translucent fading Disks with rainbow colors</string>
+    <string name="paper_desc">Translucent fading Disks with rainbow colors</string>
 </resources>
