@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.sample.livewallpaper.bokehrainbow;
+package au.com.dealsmap.lwp.blender_pro;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -34,7 +34,7 @@ import android.graphics.PorterDuffXfermode;
 import android.os.Bundle;
 import android.view.SurfaceHolder;
 
-public class BokehRainbowWallpaper extends AnimationWallpaper {
+public class BlenderWallpaper extends AnimationWallpaper {
 
 	@Override
 	public Engine onCreateEngine() {
@@ -49,7 +49,7 @@ public class BokehRainbowWallpaper extends AnimationWallpaper {
 		int visibleWidth;
 		
 		
-		Set<BokehRainbowCircle> circles = new HashSet<BokehRainbowCircle>();
+		Set<BlenderCircle> circles = new HashSet<BlenderCircle>();
 
 		int iterationCount = 0;
 
@@ -124,7 +124,7 @@ public class BokehRainbowWallpaper extends AnimationWallpaper {
 			c.drawColor(0xff000000);
 
 			synchronized (circles) {
-				for (BokehRainbowCircle circle : circles) {
+				for (BlenderCircle circle : circles) {
 					if (circle.alpha == 0)
 						continue;
 
@@ -194,9 +194,9 @@ public class BokehRainbowWallpaper extends AnimationWallpaper {
 		@Override
 		protected void iteration() {
 			synchronized (circles) {
-				for (Iterator<BokehRainbowCircle> it = circles.iterator(); it
+				for (Iterator<BlenderCircle> it = circles.iterator(); it
 						.hasNext();) {
-					BokehRainbowCircle circle = it.next();
+					BlenderCircle circle = it.next();
 					circle.tick();
 					if (circle.isDone())
 						it.remove();
@@ -232,7 +232,7 @@ public class BokehRainbowWallpaper extends AnimationWallpaper {
 			int color = getColor(yFraction);
 
 			int steps = 40 + (int) (20 * Math.random());
-			BokehRainbowCircle circle = new BokehRainbowCircle(x, y, radius,
+			BlenderCircle circle = new BlenderCircle(x, y, radius,
 					color, steps);
 			synchronized (this.circles) {
 				this.circles.add(circle);

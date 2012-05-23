@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.sample.livewallpaper.bokehrainbow;
+package au.com.dealsmap.lwp.blender_pro;
 
 import android.graphics.Bitmap;
 
-public class BokehRainbowCircle {
+public class BlenderCircle {
 	float origRadius;
 
 	float deltaRadius;
@@ -46,11 +46,11 @@ public class BokehRainbowCircle {
 
 	Bitmap bitmap;
 	
-	String[] myString =  {"忍","魂","武","信","义","忠","勇","仁"};
+	String[] myString =  {"�?","魂","武","信","义","忠","勇","�?"};
 	String myWord;
 
 	
-	public BokehRainbowCircle(float xCenter, float yCenter, float radius,
+	public BlenderCircle(float xCenter, float yCenter, float radius,
 			int color, int steps) {
 		this.x = xCenter;
 		this.origX = xCenter;

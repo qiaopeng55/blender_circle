@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.sample.livewallpaper.bokehrainbow;
+package au.com.dealsmap.lwp.blender_pro;
 
 public final class R {
     public static final class attr {

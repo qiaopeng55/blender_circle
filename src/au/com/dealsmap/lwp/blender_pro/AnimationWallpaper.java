@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.sample.livewallpaper.bokehrainbow;
+package au.com.dealsmap.lwp.blender_pro;
 
 import android.os.Handler;
 import android.service.wallpaper.WallpaperService;
